@@ -12,13 +12,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
 <style>
   :root{
-    --bg:#3183dd;
-    --bg-deep:#3183dd;
-    --surface:#3183dd;
+    --bg:#0a1e38;
+    --bg-deep:#061528;
+    --surface:#12293f;
     --ink:#eef4fb;
     --ink-soft:#b3c6dd;
     --forest:#43e6d2;
-    --forest-deep:#3183dd;
+    --forest-deep:#04101f;
     --copper:#3fdcc8;
     --copper-soft:#8df2e3;
     --line:#274a6e;
@@ -28,13 +28,13 @@
   }
   @media (prefers-color-scheme: dark){
     :root{
-      --bg:#3183dd;
-      --bg-deep:#3183dd;
-      --surface:#3183dd;
+      --bg:#040c1a;
+      --bg-deep:#020812;
+      --surface:#0a1a30;
       --ink:#eef4fb;
       --ink-soft:#a7bcd6;
       --forest:#4deeda;
-      --forest-deep:#3183dd;
+      --forest-deep:#01060f;
       --copper:#45e6d2;
       --copper-soft:#93f4e6;
       --line:#1d3a5c;
@@ -53,7 +53,7 @@
   h1,h2,h3{font-family:"Playfair Display", Georgia, "Times New Roman", serif; line-height:1.15; margin:0;}
   p{margin:0 0 1em;}
   img{max-width:100%; display:block;}
-  a{color:var(--copper);}
+  a{color:#3183dd;}
 
   /* ---------- Hero ---------- */
   .hero{
@@ -76,7 +76,7 @@
   .hero-inner{position:relative; width:min(840px,100%); margin:0 auto; padding:0;}
   .hero .dates{
     font-family:"Playfair Display", Georgia, serif; font-style:italic;
-    font-size:clamp(1.05rem, 3vw, 1.4rem); letter-spacing:.06em; color:var(--copper-soft);
+    font-size:clamp(1.05rem, 3vw, 1.4rem); letter-spacing:.06em; color:#3183dd;
   }
   .hero h1{font-size:clamp(2.7rem, 9vw, 5.2rem); font-weight:800; margin:.12em 0 .18em;}
   .hero .tagline{font-size:clamp(1.15rem, 3.4vw, 1.55rem); line-height:1.4; max-width:34em; margin:0 0 .6em;}
@@ -99,29 +99,29 @@
     color:var(--ink); text-decoration:none; font-weight:600; font-size:.95rem;
     padding:.42rem .8rem; border-radius:999px; white-space:nowrap;
   }
-  .nav-inner a:hover, .nav-inner a:focus-visible{background:var(--bg-deep); color:var(--forest);}
+  .nav-inner a:hover, .nav-inner a:focus-visible{background:var(--bg-deep); color:#3183dd;}
   .nav-inner a.brand{font-family:"Playfair Display", Georgia, serif; font-weight:700; margin-right:auto; padding-left:0;}
 
   /* ---------- Layout ---------- */
   .wrap{width:min(1060px,100% - 2.5rem); margin:0 auto;}
   section{padding:3.4rem 0 1rem;}
   .section-head{margin-bottom:1.6rem;}
-  .section-head h2{font-size:clamp(1.8rem, 5vw, 2.5rem); font-weight:700; color:var(--forest);}
-  .section-head .years{font-family:"Playfair Display", Georgia, serif; font-style:italic; color:var(--copper); font-size:1.05rem; display:block; margin-top:.25rem;}
+  .section-head h2{font-size:clamp(1.8rem, 5vw, 2.5rem); font-weight:700; color:#3183dd;}
+  .section-head .years{font-family:"Playfair Display", Georgia, serif; font-style:italic; color:#3183dd; font-size:1.05rem; display:block; margin-top:.25rem;}
   .prose{max-width:44em;}
   .prose p:first-of-type::first-letter{
     font-family:"Playfair Display", Georgia, serif; font-weight:700;
-    font-size:2.6em; float:left; line-height:.85; padding:.06em .12em 0 0; color:var(--copper);
+    font-size:2.6em; float:left; line-height:.85; padding:.06em .12em 0 0; color:#3183dd;
   }
   aside.term{
     border-left:3px solid var(--copper); background:var(--bg-deep);
     padding:.9rem 1.1rem; margin:1.4rem 0; border-radius:0 var(--radius) var(--radius) 0;
     font-size:.98rem;
   }
-  aside.term strong{color:var(--forest);}
+  aside.term strong{color:#3183dd;}
   blockquote.pull{
     font-family:"Playfair Display", Georgia, serif; font-style:italic;
-    font-size:clamp(1.35rem, 4vw, 1.8rem); line-height:1.35; color:var(--forest);
+    font-size:clamp(1.35rem, 4vw, 1.8rem); line-height:1.35; color:#3183dd;
     margin:2rem 0; padding:0 0 0 1.2rem; border-left:3px solid var(--copper);
   }
   blockquote.pull cite{display:block; font-size:.95rem; font-style:normal; font-family:"Source Sans 3", sans-serif; color:var(--ink-soft); margin-top:.6rem;}
@@ -130,7 +130,7 @@
   .hat-code li{display:grid; grid-template-columns:1.15rem 1fr; gap:.7rem; align-items:start; padding:.7rem 0; border-bottom:1px solid var(--line);}
   .hat-swatch{width:.9rem; height:.9rem; margin-top:.38rem; border:1px solid rgba(255,255,255,.45); border-radius:50%; background:var(--hat-color);}
   .hat-swatch.split{background:linear-gradient(135deg, #e67828 0 50%, #9098a3 50% 100%);}
-  .hat-code strong{color:var(--forest);}
+  .hat-code strong{color:#3183dd;}
 
   .stats{
     display:grid; grid-template-columns:repeat(5, minmax(0, 1fr));
@@ -139,7 +139,7 @@
   }
   @media (max-width:800px){.stats{grid-template-columns:repeat(2, minmax(0, 1fr));}}
   .stat{background:var(--surface); padding:1.1rem 1rem;}
-  .stat b{display:block; font-family:"Playfair Display", Georgia, serif; font-size:1.55rem; color:var(--forest); line-height:1.1;}
+  .stat b{display:block; font-family:"Playfair Display", Georgia, serif; font-size:1.55rem; color:#3183dd; line-height:1.1;}
   .stat span{font-size:.88rem; color:var(--ink-soft);}
 
   .story-photo{margin:2rem 0;}
@@ -158,16 +158,16 @@
   .process-list li:first-child{border-top:1px solid var(--line);}
   .process-list li::before{
     content:counter(process); width:2.5rem; height:2.5rem; display:grid; place-items:center;
-    border:1px solid var(--copper); border-radius:50%; color:var(--forest);
+    border:1px solid var(--copper); border-radius:50%; color:#3183dd;
     font-family:"Playfair Display", Georgia, serif; font-size:1.25rem; font-weight:700;
   }
-  .process-list h3{font-size:1.35rem; color:var(--forest); margin:.1rem 0 .35rem;}
+  .process-list h3{font-size:1.35rem; color:#3183dd; margin:.1rem 0 .35rem;}
   .process-list p{margin:0;}
   .process-note{
     max-width:44em; margin:1.6rem 0; padding:1.15rem 1.25rem;
     background:var(--bg-deep); border-top:3px solid var(--copper);
   }
-  .process-note h3{font-size:1.25rem; color:var(--forest); margin:0 0 .45rem;}
+  .process-note h3{font-size:1.25rem; color:#3183dd; margin:0 0 .45rem;}
   .process-note p:last-child{margin-bottom:0;}
   @media (max-width:480px){
     .process-list li{grid-template-columns:2.35rem 1fr; gap:.75rem;}
@@ -181,10 +181,10 @@
     gap:.5rem 2.6rem; max-width:56em; margin-top:1.8rem;
   }
   .job-group{padding:1.2rem 0; border-top:1px solid var(--line);}
-  .job-group h3{font-size:1.35rem; color:var(--forest); margin:0 0 .65rem;}
+  .job-group h3{font-size:1.35rem; color:#3183dd; margin:0 0 .65rem;}
   .job-group ul{margin:0; padding-left:1.2rem;}
   .job-group li{margin:.3rem 0; padding-left:.2rem;}
-  .job-group li::marker{color:var(--copper);}
+  .job-group li::marker{color:#3183dd;}
   @media (max-width:700px){.jobs-grid{grid-template-columns:1fr; gap:0;}}
 
   /* ---------- Gallery ---------- */
@@ -194,7 +194,7 @@
     background:var(--surface); color:var(--ink); border:1px solid var(--line);
     padding:.5rem .95rem; border-radius:999px;
   }
-  .filters button .n{color:var(--copper); font-weight:700; margin-left:.3rem;}
+  .filters button .n{color:#3183dd; font-weight:700; margin-left:.3rem;}
   .filters button[aria-pressed="true"]{background:var(--forest); border-color:var(--forest); color:#03222b;}
   .filters button[aria-pressed="true"] .n{color:#03222b;}
   .filters button:focus-visible{outline:2px solid var(--copper); outline-offset:2px;}
@@ -211,7 +211,7 @@
   }
   .card .theme-tag{
     display:inline-block; font-size:.72rem; font-weight:700; letter-spacing:.05em; text-transform:uppercase;
-    color:var(--copper); margin-top:.6rem;
+    color:#3183dd; margin-top:.6rem;
   }
 
   /* ---------- Lightbox ---------- */
@@ -241,15 +241,15 @@
     background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
     padding:1.5rem 1.4rem; box-shadow:var(--shadow);
   }
-  .award .year{font-family:"Playfair Display", Georgia, serif; font-size:2rem; color:var(--copper); line-height:1;}
-  .award h3{font-size:1.3rem; margin:.5rem 0 .2rem; color:var(--forest);}
+  .award .year{font-family:"Playfair Display", Georgia, serif; font-size:2rem; color:#3183dd; line-height:1;}
+  .award h3{font-size:1.3rem; margin:.5rem 0 .2rem; color:#3183dd;}
   .award .from{font-weight:600; color:var(--ink-soft); font-size:.95rem; margin-bottom:.7rem;}
   .honest-note{font-size:.95rem; color:var(--ink-soft); font-style:italic; margin-top:1.2rem; max-width:44em;}
 
   /* ---------- Dedication ---------- */
   .dedication{background:var(--forest-deep); color:#e6eef8; margin-top:3.4rem;}
-  .dedication .section-head h2{color:var(--copper-soft);}
-  .dedication .prose p:first-of-type::first-letter{color:var(--copper-soft);}
+  .dedication .section-head h2{color:#3183dd;}
+  .dedication .prose p:first-of-type::first-letter{color:#3183dd;}
   .dedication .signoff{
     font-family:"Playfair Display", Georgia, serif; font-style:italic;
     font-size:clamp(1.2rem, 3.6vw, 1.5rem); line-height:1.45; margin-top:1.6rem; max-width:38em;
@@ -258,7 +258,7 @@
 
   /* ---------- Sources & Acknowledgments ---------- */
   .sources{padding-top:3.8rem;}
-  .sources h3{font-size:1.35rem; color:var(--forest); margin:1.8rem 0 .75rem;}
+  .sources h3{font-size:1.35rem; color:#3183dd; margin:1.8rem 0 .75rem;}
   .sources-intro{max-width:44em; color:var(--ink-soft);}
   .sources-list{max-width:50em; margin:.4rem 0 0; padding-left:1.25rem;}
   .sources-list li{margin:.7rem 0; padding-left:.25rem;}
@@ -275,7 +275,7 @@
   .contact-intro{max-width:44em; color:var(--ink-soft);}
   .contact-form{max-width:42rem; margin-top:1.5rem; display:grid; gap:1.15rem;}
   .form-field{display:grid; gap:.4rem;}
-  .form-field label{font-weight:700; color:var(--forest);}
+  .form-field label{font-weight:700; color:#3183dd;}
   .form-field input,
   .form-field textarea{
     width:100%; padding:.8rem .9rem; border:1px solid var(--line); border-radius:6px;
@@ -292,10 +292,10 @@
   .contact-form button:focus-visible{outline:2px solid var(--copper-soft); outline-offset:3px;}
 
   footer.site-footer{padding:2.6rem 0 3rem; text-align:center; color:var(--ink-soft); font-size:.95rem;}
-  footer.site-footer .f-title{font-family:"Playfair Display", Georgia, serif; font-size:1.2rem; color:var(--forest); margin-bottom:.4rem;}
+  footer.site-footer .f-title{font-family:"Playfair Display", Georgia, serif; font-size:1.2rem; color:#3183dd; margin-bottom:.4rem;}
   footer.site-footer p{margin:0 0 .35rem;}
   .visitor-counter{margin-top:1.25rem; text-align:center;}
-  .visitor-counter .visitor-label{font-family:"Playfair Display", Georgia, serif; font-size:1.1rem; font-weight:700; color:var(--forest); margin-bottom:.35rem;}
+  .visitor-counter .visitor-label{font-family:"Playfair Display", Georgia, serif; font-size:1.1rem; font-weight:700; color:#3183dd; margin-bottom:.35rem;}
   .visitor-counter a{display:inline-block;}
 </style>
 </head>
@@ -463,7 +463,7 @@
       <p>In all, $38 million was spent on closure and reclamation between 1990 and 1997, plus an $11 million water treatment plant that still operates every spring and summer; the cleaned water flows into MacDonald Creek, then Trepanier Creek.</p>
       <p>The tailings pond became a wetland. After three years of experiments, workers placed <strong>800 “plant sandwiches”</strong> — mats bundled with living plants — into the pond in 1992. It became a real, living wetland, home to birds and waterfowl. <strong>Over 220,000 trees and shrubs</strong> were planted, and the rock piles were reshaped to look natural. The pit itself is now a lake.</p>
       <p>Today the site is quiet and park-like — deer, moose, bear, coyote, marmots, and birds. The pit lake sits safely back behind a rock barricade. This work won the Annual B.C. Mine Reclamation Award for 1991 — see the Awards below.</p>
-      <h3 style="font-size:1.5rem; color:var(--forest); margin:1.8em 0 .6em;">The Lake That Never Was</h3>
+      <h3 style="font-size:1.5rem; color:#3183dd; margin:1.8em 0 .6em;">The Lake That Never Was</h3>
       <p>When the mine managers were getting ready for reclamation, they printed brochures and pamphlets and handed them out. The plan even made CHBC news in Kelowna — CHBC was the local channel, later bought by Global News. The news story and the brochures being handed out are still remembered.</p>
       <p>There's a record of that summer in the company's own 1989 Annual Report, written by Mine Manager Emile Brokx. In the summer of 1989, Brenda presented a general outline of its reclamation plans to the surrounding communities — and brought back the public mine tours. The tours proved extremely popular: almost 1,500 people came up the mountain to walk through the mine in its final summer.</p>
       <p>The plan was a good one: when the mining was done, the pit would fill with water and become a lake and a recreation area. Families could come up for a picnic. There would be places to play and relax, and even sailboats out on the water.</p>
@@ -500,7 +500,7 @@
       <p>There was no company townsite. Workers lived in the surrounding towns and drove up the mountain — the mine sits 22 kilometres northwest of Peachland, at 1,500 metres elevation: Peachland, Summerland, Kelowna, and Westbank. Peachland's official history says it outright: <em>“1970 – Brenda Mine created the largest population growth in Peachland.”</em></p>
       <p>The mine's most lasting gift may be the <strong>Peachland Lake Dam</strong> — a 1,400-foot-long, 90-foot-high dam that raised the lake's water storage from about 1,000 acre-feet to over 9,500, more than tripling the lake's surface area. Water for the mine <em>and</em> the town. After closure the dam was handed to the Municipality of Peachland, and families there still drink from that water today.</p>
       <p>Brenda also welcomed people from the surrounding communities, including school field trips. Local kids got to see the pit, the shovels, and the mill up close. And because the tailings dam loomed over the valley, Peachland practised evacuation drills in case it ever broke. The town lived with the mine's scale every day.</p>
-      <h3 style="font-size:1.5rem; color:var(--forest); margin:1.8em 0 .6em;">The Hard-Hat Colour Code</h3>
+      <h3 style="font-size:1.5rem; color:#3183dd; margin:1.8em 0 .6em;">The Hard-Hat Colour Code</h3>
       <p>This was the hard-hat colour code the crews used at Brenda Mines. There was never a Canadian national job-colour code — CSA Z94.1 does not assign hard-hat colours to jobs — so each mine set its own. Brenda followed the B.C. mining pattern common through the 1970s and 1980s:</p>
       <ul class="hat-code">
         <li><span class="hat-swatch" style="--hat-color:#f5f6f7" aria-hidden="true"></span><span><strong>White</strong> — management, engineers, geologists, supervisors, and foremen. A white hat meant staff.</span></li>
