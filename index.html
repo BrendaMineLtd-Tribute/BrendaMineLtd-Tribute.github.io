@@ -386,6 +386,40 @@
       <div class="stat"><b>2 tonnes</b><span>of gold produced over the mine's life</span></div>
       <div class="stat"><b>113+ tonnes</b><span>of silver produced over the mine's life</span></div>
     </div>
+<script>
+(function(){
+  function buildTiles(text){
+    var grid = document.querySelector('.stats');
+    if(!grid) return;
+    var items = [];
+    text.split('\n').forEach(function(line){
+      line = line.replace(/^\s+|\s+$/g, '');
+      if(!line || line.charAt(0) === '#') return;
+      var bar = line.indexOf('|');
+      if(bar < 0) return;
+      var num = line.slice(0, bar).replace(/^\s+|\s+$/g, '');
+      var label = line.slice(bar + 1).replace(/^\s+|\s+$/g, '');
+      if(!num || !label) return;
+      items.push({num: num, label: label});
+    });
+    if(!items.length) return;
+    grid.innerHTML = '';
+    items.forEach(function(it){
+      var d = document.createElement('div');
+      d.className = 'stat';
+      var b = document.createElement('b'); b.textContent = it.num;
+      var s = document.createElement('span'); s.textContent = it.label;
+      d.appendChild(b); d.appendChild(s);
+      grid.appendChild(d);
+    });
+  }
+  fetch('tiles.txt?x=' + Date.now()).then(function(r){
+    if(!r.ok) throw new Error('tiles file not found');
+    return r.text();
+  }).then(buildTiles).catch(function(){ /* keep the tiles already on the page */ });
+})();
+</script>
+
   </section>
 
   <section id="how-it-worked" class="wrap">
